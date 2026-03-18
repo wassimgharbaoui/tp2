@@ -144,12 +144,15 @@ Dans un environnement rooté, cet état passe à **orange**, signalant que la ch
 Une fois l'audit terminé, l'émulateur est réinitialisé à son état d'usine pour éliminer toute trace des opérations réalisées et éviter toute contamination d'une future session.
 
 ### 📸 Image 14 — Sélection de l'option "Wipe Data"
-> Insérer ici la capture montrant la fenêtre de réinitialisation dans Android Studio.
+<img width="511" height="433" alt="image" src="https://github.com/user-attachments/assets/a5661984-9aa3-4835-a73b-119ad7baf618" />
+
 
 ---
 
 ### 📸 Image 15 — Redémarrage post-réinitialisation
-> Insérer ici la capture montrant l'AVD qui redémarre après le wipe.
+<img width="316" height="702" alt="image" src="https://github.com/user-attachments/assets/3f59dd84-d539-4f41-9a3b-f41a29980cf9" />
+
+
 
 ---
 
