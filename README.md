@@ -58,8 +58,7 @@ adb shell "su -c id"
 
 ---
 
-### 📸 Image 5 — Analyse du fichier Logcat
-> Insérer ici la capture du journal Logcat capturé pendant la phase de rooting.
+
 
 ---
 
@@ -67,8 +66,6 @@ adb shell "su -c id"
 
 Avant de procéder aux tests applicatifs, un AVD propre est démarré afin de partir d'un état système sain et d'assurer la reproductibilité des observations.
 
-### 📸 Image 6 — État initial de l'AVD et connexion ADB
-> Insérer ici la capture montrant le démarrage de l'AVD vierge et la connexion ADB établie.
 
 ---
 
@@ -77,16 +74,18 @@ Avant de procéder aux tests applicatifs, un AVD propre est démarré afin de pa
 L'application DIVA est déployée sur l'émulateur via ADB :
 
 ```bash
-adb install diva-beta.apk
+adb install DivaApplication.apk
 ```
 
 ### 📸 Image 7 — Confirmation de l'installation via ADB
-> Insérer ici la capture montrant "Success" dans le terminal après l'installation.
+<img width="248" height="31" alt="image" src="https://github.com/user-attachments/assets/01a8f08c-6041-42d8-b73f-9f246a1ecf1f" />
+
 
 ---
 
 ### 📸 Image 8 — Interface principale de DIVA
-> Insérer ici la capture montrant le menu d'accueil de l'application DIVA dans l'émulateur.
+<img width="382" height="783" alt="image" src="https://github.com/user-attachments/assets/ac2eb328-0bbe-43a2-97f9-7ed919061a3f" />
+
 
 ---
 
@@ -99,7 +98,8 @@ Trois parcours utilisateur ont été définis pour couvrir des surfaces d'attaqu
 Lancement de DIVA et contrôle de l'affichage du menu principal, avec surveillance des journaux système en temps réel.
 
 ### 📸 Image 9 — Journaux système pendant le lancement de DIVA
-> Insérer ici la capture du terminal Logcat actif pendant l'ouverture de l'application.
+<img width="830" height="422" alt="image" src="https://github.com/user-attachments/assets/41778acb-f1f6-4509-8b82-6547b232b086" />
+
 
 ---
 
@@ -108,7 +108,8 @@ Lancement de DIVA et contrôle de l'affichage du menu principal, avec surveillan
 Sélection du module **"1. INSECURE LOGGING"** pour soumettre une entrée utilisateur et observer ce qui est journalisé.
 
 ### 📸 Image 10 — Module de saisie et recherche d'un item (2 captures)
-> Insérer ici les deux captures : exploitation du module Input Validation et la saisie d'un terme de recherche.
+<img width="399" height="827" alt="image" src="https://github.com/user-attachments/assets/3388f384-e8fb-4690-bc29-9b2f01da7f84" />
+
 
 ---
 
@@ -117,14 +118,10 @@ Sélection du module **"1. INSECURE LOGGING"** pour soumettre une entrée utilis
 Navigation vers le module **"Insecure Data Storage - Part 1"** pour saisir des identifiants fictifs et inspecter ensuite leur stockage sur le disque.
 
 ### 📸 Image 11 — Saisie dans le module stockage et écran Settings (2 captures)
-> Insérer ici les deux captures : formulaire de saisie et vue Settings.
+<img width="310" height="693" alt="Screenshot 2026-02-14 214624" src="https://github.com/user-attachments/assets/385bcbd7-9dab-4bf4-8459-4a67ab5b4de3" />
+<img width="934" height="211" alt="Screenshot 2026-02-14 215027" src="https://github.com/user-attachments/assets/e9370ac2-90fe-41e8-9491-890ecc399cca" />
 
----
 
-### 📸 Image 12 — Inspection du système de fichiers privé via les droits root
-> Insérer ici la capture montrant la lecture du répertoire /data/data/ avec les privilèges UID 0.
-
----
 
 ## Phase 5 — Analyse du Verified Boot
 
@@ -135,7 +132,8 @@ Le **Verified Boot** (ou AVB 2.0) garantit que chaque partition démarrée provi
 Dans un environnement rooté, cet état passe à **orange**, signalant que la chaîne de confiance a été volontairement levée pour permettre l'accès administrateur. Ce n'est pas un état d'erreur en contexte de laboratoire, mais un indicateur que les garanties d'intégrité au démarrage ne sont plus actives.
 
 ### 📸 Image 13 — État du Verified Boot (audit de clôture)
-> Insérer ici la capture confirmant l'état "orange" du Verified Boot State.
+<img width="1109" height="60" alt="image" src="https://github.com/user-attachments/assets/d366efab-b0a5-42a3-a1e8-24844a35309c" />
+
 
 ---
 
